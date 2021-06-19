@@ -6,7 +6,7 @@ node('master')
     }
     stage('ContinuousBuild')
     {
-        sh 'mvn package'
+        sh 'cd /home/ubuntu/.jenkins/workspace/ScriptedPipeline;mvn package'
     }
     stage('ContinuousDeployment')
     {
